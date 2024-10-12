@@ -5,7 +5,7 @@ FROM node:20
 WORKDIR /usr/src/app
 
 # Copy the package.json and package-lock.json files to install dependencies
-COPY package*.json ./
+COPY package*.json /usr/src/app
 
 # Install dependencies for the backend
 RUN npm install 20
